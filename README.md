@@ -1,5 +1,7 @@
 # next 框架测试
 
+https://juejin.cn/post/6855917901090652174#heading-32
+
 测试next + react + ts。
 react+ts+express（内置）+webpack（内置）
 后续可能会使用框架写一些ts类型相关数据。
