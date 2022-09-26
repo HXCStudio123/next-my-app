@@ -138,6 +138,10 @@ function genericTest() {
   const test1: InterT<number> = testT
 }
 function enumTest() {
+  console.log(typeof ['tesla', 'model 3', 'model X', 'model Y'])
+  for(let i in  ['tesla', 'model 3', 'model X', 'model Y']) {
+    console.log(i)
+  }
   /**
    * 等同于
     var Enum;
