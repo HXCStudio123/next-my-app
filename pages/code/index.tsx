@@ -6,6 +6,7 @@ function CodeTest() {
 }
 export default CodeTest
 
+
 function topKFrequent(nums: number[], k: number): number[] {
   class MinStack {
     constructor() { }
