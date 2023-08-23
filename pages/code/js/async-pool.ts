@@ -2,9 +2,6 @@
 // await asyncPool(2, [1000, 5000, 3000, 2000], timeout);
 import axios from "axios";
 
-export default function AsyncPool() {
-  return <div>中间展示</div>
-}
 // 自定义实现
 function asyncPool1(count: number, times: number[], callback: Function) {
   return new Promise((resolve: Function) => {

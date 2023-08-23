@@ -1,33 +1,9 @@
-function SortCodeTest() {
-  const testValue = testFucntion()
-  return (<div>看console{testValue.toString()}</div>)
-}
-export default SortCodeTest
-
-function testClass() {
-  class Except {
-    value: number
-    negative: boolean
-    constructor(value: number) {
-      this.value = value
-      this.negative = true
-    }
-    get not() {
-      console.log('触发了not get', this)
-      this.negative = !this.negative;
-      return this
-    }
-    toBe(expected: number) {
-      const result = this.value === expected
-      return this.negative ? result : !result
-    }
-  }
-  const expectValue = new Except(3).not.not.not.toBe(4)
-  console.log(expectValue)
-
-  return expectValue
-}
-function testFucntion() {
+/**
+ * myExcept toBe() or not.toBe()
+ * js 底层原理知识点
+ * @returns 
+ */
+function myExcept() {
   interface Matcher {
     toBe(data: any): void
     not: Matcher
@@ -55,7 +31,16 @@ function testFucntion() {
   console.log(exceptValue)
   return exceptValue
   /**
+   * TODO
    * new 做了什么
    * 原型与原型链
    */
 }
+
+/**
+ * TODO
+ * new
+ * 几种继承方式es5/6
+ * call/apply/bind
+ * 防抖节流
+ */
